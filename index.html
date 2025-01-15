@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Онлайн-курс по самодисциплине</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        h2 {
+            color: #34495e;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Онлайн-курс по Самодисциплине</h1>
+        <h2>Достигайте своих целей быстрее</h2>
+        <p>Наш онлайн-курс поможет вам развить привычки, которые изменят вашу жизнь. Узнайте проверенные стратегии повышения продуктивности, борьбы с прокрастинацией и укрепления дисциплины.</p>
+        <h3>Оставьте свои данные, чтобы узнать больше:</h3>
+        <form id="feedback-form">
+            <div class="form-group">
+                <label for="name">Ваше имя:</label>
+                <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Ваш email:</label>
+                <input type="email" id="email" name="email" placeholder="Введите ваш email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Ваше сообщение:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Задайте вопрос или оставьте комментарий" required></textarea>
+            </div>
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+    <script>
+        // Пример настройки события для Google Ads
+        document.getElementById('feedback-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Предотвращаем стандартное поведение формы
+
+            // Отправка события в Google Ads
+            gtag('event', 'conversion', {
+                'send_to': 'AW-XXXXXXXXX/XXXXXXXXXXXXX', // Замените на ваш идентификатор
+                'event_callback': function() {
+                    alert('Спасибо за ваше сообщение!');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
